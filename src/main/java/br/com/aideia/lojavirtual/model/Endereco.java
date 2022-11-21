@@ -23,19 +23,12 @@ public class Endereco implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_endereco")
 	private Long id;
-
 	private String ruaLogra;
-
 	private String cep;
-
 	private String numero;
-
 	private String complemento;
-
 	private String bairro;
-
 	private String uf;
-
 	private String cidade;
 
 	@ManyToOne(targetEntity = Pessoa.class)
